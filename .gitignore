@@ -20,6 +20,9 @@ __pycache__/
 env/
 venv/
 
+.venv_*/
+.env_*/
+
 # Игнорирование сборочных файлов
 build/
 dist/
