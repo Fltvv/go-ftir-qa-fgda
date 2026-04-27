@@ -1,36 +1,95 @@
-# Игнорирование временных файлов редактора
-*.swp
-*.swo
+# Operating system files
+.DS_Store
+Thumbs.db
 
-# macOS system files
-**/.DS_Store
-
-# Игнорирование логов и временных файлов
-*.log
-*.tmp
-*.pid
-
-# Игнорирование кэша Python
-__pycache__/
-**/.ipynb_checkpoints/
-.idea/
-*.pyc
-
-# Игнорирование виртуальных окружений
-env/
-venv/
-
-.venv_*/
-.env_*/
-
-# Игнорирование сборочных файлов
-build/
-dist/
-
-# Игнорирование конфигурационных файлов
-config/secrets.yaml
-!config/defaults.yaml  # Но не игнорировать defaults.yaml
-
-# Игнорирование IDE-файлов
+# Editor and IDE files
 .idea/
 .vscode/
+*.swp
+*.swo
+*~
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+.hypothesis/
+
+# Virtual environments and local Python versions
+.env
+.env.*
+.venv
+.venv/
+.venv_*/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.python-version
+
+# Jupyter/IPython
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+
+# Logs, runtime files, and local databases
+*.log
+*.tmp
+*.temp
+*.pid
+*.seed
+*.sqlite
+*.sqlite3
+*.db
+
+# Build, packaging, and coverage artifacts
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+*.egg-info/
+*.egg
+wheels/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+*.py,cover
+.tox/
+.nox/
+
+# Tool and package-manager caches
+.cache/
+.pip-cache/
+.nox/
+__pypackages__/
+.pdm.toml
+.pdm-python
+.pdm-build/
+
+# Documentation and static build output
+docs/_build/
+site/
+
+# Secrets and local configuration
+.envrc
+*.local
+config/secrets.*
+secrets.*
+
+# Temporary archives and exports
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
